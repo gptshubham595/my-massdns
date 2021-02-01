@@ -5,12 +5,13 @@
 
 #include <stdint.h>
 #include <time.h>
-#include <sys/socket.h>
+#include "socket.h"
+//#include <winsock2.h>
 #ifdef HAVE_EPOLL
-    #include <sys/epoll.h>
+    #include "epoll.h"
 #endif
-#include <netinet/in.h>
-#include <arpa/inet.h>
+#include "in.h"
+#include "arpainet.h"
 //#define PCAP_SUPPORT
 #ifdef PCAP_SUPPORT
 #include <pcap.h>
